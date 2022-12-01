@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mortal Kombat 3 | Golpes</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script
+      src="https://kit.fontawesome.com/97248c65c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js" defer></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <h1>Qual personagem deseja ver os golpes?</h1>
+      <div class="input-wrapper">
+        <label for="filter" class="sr-only">Filter</label>
+        <input type="text" id="filter" placeholder="ex: Jax" />
+        <i class="ph-magnifying-glass"></i>
+      </div>
+    </header>
+    <main>
+      <ul class="characters">
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/classic-sub-zero.gif"
+              alt="classic-sub-zero"
+              class="char-img"
+            />
+            <h2>Classic Sub-Zero</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Congelar – Baixo, Frente, Soco Baixo</li>
+            <li>Congelar o chão – Baixo, Trás, Chute Baixo</li>
+            <li>Escorregada – Trás + Soco Baixo + Bloqueio + Chute Baixo</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/cyrax.png"
+              alt="cyrax"
+              class="char-img"
+            />
+            <h2>Cyrax</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>
+              Jogar bomba – Segure Chute Baixo e aperte Frente, Frente, Chute
+              Alto
+            </li>
+            <li>
+              Jogar bomba perto – Segure Chute Baixo e aperte Trás, Trás, Chute
+              Alto
+            </li>
+            <li>Teleporte – Frente, Baixo, Bloqueio</li>
+            <li>Corrida no ar – Baixo, Frente, Bloqueio</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/ermac.png"
+              alt="ermac"
+              class="char-img"
+            />
+            <h2>Ermac</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Impacto Telecinético – Trás, Baixo, Trás, Chute Alto</li>
+            <li>Explosão verde – Baixo, Trpas, Soco Baixo</li>
+            <li>Soco de teleporte – Baixo, Trás, Soco Alto</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/human-smoke.gif"
+              alt="human-smoke"
+              class="char-img"
+            />
+            <h2>Human Smoke</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Lança – Trás, Trás, Soco Baixo</li>
+            <li>Soco com teleporte – Baixo, Trás, Soco Alto</li>
+            <li>Arremesso Aereo – Bloqueio (no ar)</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img src="images/characters/jade.png" alt="jade" class="char-img" />
+            <h2>Jade</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Boomerangue alto – Trás, Frente, Soco Alto</li>
+            <li>Boomerang normal – Trás, Frente, Soco Baixo</li>
+            <li>Boomerang baixo – Trás, Frente, Chute Baixo</li>
+            <li>Invencibilidade a projéteis – Trás, Frente, Chute Alto</li>
+            <li>Chute das Sombras – Baixo, Frente, Chute Baixo</li>
+            <li>
+              Fazer Boomerangue baixo retornar – Baixo, Frente, Chute Baixo
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img src="images/characters/jax.png" alt="Jax" class="char-img" />
+            <h2>Jax</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Bionic Rush – Frente, Frente, Chute Alto</li>
+            <li>Tiro Único – Trás, Frente, Soco Alto</li>
+            <li>Tiro Dúplo – Frente, Frente, Baixo, Baixo, Soco Alto</li>
+            <li>
+              Esmagando o chão – Segure Chute Baixo por 3 segundos e solte
+              depois
+            </li>
+            <li>Agarrão “Gotcha” – Frente, Frente, Soco Baixo</li>
+            <li>Lançamento – Lançe e aperte Soco Alto repetidamente</li>
+            <li>Quebrando as costas – Bloqueio (no ar)</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/kabal.gif"
+              alt="kabal"
+              class="char-img"
+            />
+            <h2>Kabal</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Giro – Trás, Frente, Chute Baixo</li>
+            <li>Bila de Fogo – Trás, Trás, Soco Alto</li>
+            <li>Serra no chão – Trás, Trás, Trás, Corrida</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img src="images/characters/kano.gif" alt="kano" class="char-img" />
+            <h2>Kano</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Arremesso de faca – Baixo, Trás, Soco Alto</li>
+            <li>Gancho com faca – Baixo, Frente, Soco Alto</li>
+            <li>Rolamento – Segure Chute Baixo por 3 segundos e depois sote</li>
+            <li>Rolamento para cima – Frente, Baixo, Frente, Chute Alto</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/kitana.png"
+              alt="kitana"
+              class="char-img"
+            />
+            <h2>Kitana</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Sonda de Leque – Trás, Trás, Trás, Soco Alto</li>
+            <li>
+              Arremesso de Leque – Frente, Frente, Soco Alto + Soco Baixo
+              (também pode ser feito no ar)
+            </li>
+            <li>Super Soco Aéreo – Baixo, Trás, Soco Alto</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/kung-lao.gif"
+              alt="kung-lao"
+              class="char-img"
+            />
+            <h2>Kung Lao</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Jogar o chapéu – Trás, Frente, Soco Baixo</li>
+            <li>Chute de mergulho – Baixo, Chute Alto (no ar)</li>
+            <li>
+              Escudo giratório – Frente, Baixo, Frente, Corrida (aperte Corrida
+              repetidamente)
+            </li>
+            <li>Teleporte – Baixo, Cima</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/liu-kang.gif"
+              alt="liu-kang"
+              class="char-img"
+            />
+            <h2>Liu Kang</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Bola de fogo alta – Frente, Frente, Soco Alto</li>
+            <li>Bola de fogo baixa – Ffrente, Frente, Soco Baixo</li>
+            <li>Voadora – Frente, Frente, Chute Alto</li>
+            <li>Chute bicicleta – Segure Chute Baixo por 3 segundos e sulte</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/mileena.png"
+              alt="mileena"
+              class="char-img"
+            />
+            <h2>Mileena</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Arremesso de Sai – Segure Soco Alto por 2 segundos e solte</li>
+            <li>Chute Aereo -Frente, Frente + Chute Baixo</li>
+            <li>Rolamento no chão – Trás, Trás, Baixo, Chute Alto</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/motaro.gif"
+              alt="motaro"
+              class="char-img"
+            />
+            <h2>Motaro</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Bola de fogo – Baixo, Trás, Soco Alto</li>
+            <li>Arremessar – Frente + Soco Baixo</li>
+            <li>Varrer – Trás + Chute Baixo</li>
+            <li>Agarrar e Esmagar – Frente, Frente, Soco Baixo</li>
+            <li>Teleporte – Baixo, Cima</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/nightwolf.gif"
+              alt="nightwolf"
+              class="char-img"
+            />
+            <h2>Nightwolf</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Ombro das sombras – Frente, Frente, Chute Baixo</li>
+            <li>
+              Ombro das sombras vermelhas – Trás, Trás, Frente, Chute Alto
+            </li>
+            <li>Disparar flecha – Baixo, Trás, Soco Baixo</li>
+            <li>Machadinha – Baixo, Frente, Soco Alto</li>
+            <li>Defletir profétil – Trás, Trás, Trás, Chute Alto</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/noob-saibot.png"
+              alt="noob-saibot"
+              class="char-img"
+            />
+            <h2>Noob Saibot</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Arremesso de Clone – Frente, Frente, Soco Alto</li>
+            <li>Impacto com Teleporte – Baixo, Cima</li>
+            <li>Bola de fumaça – Baixo, Frente, Soco Baixo</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img src="images/characters/rain.gif" alt="rain" class="char-img" />
+            <h2>Rain</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Orbe de controle mental – Baixo, Frente, Soco Alto</li>
+            <li>Super chute circular – Trás + Chute Alto</li>
+            <li>Agarrão de raio – Trás, Trás, Soco Alto</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/reptile.png"
+              alt="reptile"
+              class="char-img"
+            />
+            <h2>Reptile</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Cuspe Ácido – Frente, Frente, Soco Alto</li>
+            <li>
+              Bola de Força Rápida – Frente, Frente, Soco Alto + Soco Baixo
+            </li>
+            <li>Bola de Força Lenta – Trás, Trás, Soco Alto + Soco Baixo</li>
+            <li>Invisibilidade – Cima, Baixo, Chute Alto</li>
+            <li>Deslizar – Trás + Soco Baixo + Bloqueio + Chute Baixo</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/scorpion.gif"
+              alt="scorpion"
+              class="char-img"
+            />
+            <h2>Scorpion</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Corda (“Get over here!”) – Trás, Trás, Soco Baixo</li>
+            <li>Soco de teleporte – Baixo, Trás, Soco Alto</li>
+            <li>Agarrão aereo – Bloqueio (no ar)</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/sektor.gif"
+              alt="sektor"
+              class="char-img"
+            />
+            <h2>Sektor</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Míssil – Frente, Frente, Soco Baixo</li>
+            <li>
+              Míssil direcionado ao calor – Frente, Baixo, Trás, Soco Alto
+            </li>
+            <li>Soco com teleporte – Frente, Frente, Chute Baixo</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/shang-tsung.gif"
+              alt="shang-tsung"
+              class="char-img"
+            />
+            <h2>Shang Tsung</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Uma bola de fogo - Trás, Trás, Soco Alto</li>
+            <li>Duas bolas de fogo - Trás, Trás, Frente, Soco Alto</li>
+            <li>Três bolas de fogo - Trás, Trás, Frente, Frente, Soco Alto</li>
+            <li>Erupção - Frente, Trás, Trás, Chute Baixo</li>
+            <li>Transformar em Sindel - Trás, Baixo, Trás, Chute Baixo</li>
+            <li>Transformar em Jax - Frente, Frente, Baixo, Soco Baixo</li>
+            <li>Transformar em Kano - Trás, Frente, Bloqueio</li>
+            <li>
+              Transformar em Liu Kang - Segure Bloqueio, Frente, Cima, Trás,
+              Baixo, Frente, Solte Bloqueio
+            </li>
+            <li>
+              Transformar em Sonya - Baixo, + Soco Baixo + Correr + Bloqueio
+            </li>
+            <li>Transformar em Stryker - Frente, Frente, Chute Alto</li>
+            <li>
+              Transformar em Smoke - Frente, Frente, Soco Baixo (Só Depois de
+              Liberado)
+            </li>
+            <li>Transformar em Sub-Zero - Frente, Baixo, Frente, Soco Alto</li>
+            <li>Transformar em Cyrax - Bloqueio, Bloqueio, Bloqueio</li>
+            <li>Transformar em Sektor - Baixo, Frente, Trás, Correr</li>
+            <li>Transformar em Nightwolf - Segure Bloqueio, Cima, Cima,</li>
+            <li>
+              Transformar em Sheeva - Frente, Baixo, Frente, + Chute Baixo,
+              Chute Baixo
+            </li>
+            <li>Transformar em Kung Lao - Correr, Correr, Bloqueio, Correr</li>
+            <li>Transformar em Kabal - Soco Baixo, Bloqueio, Chute Alto</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/shao-kahn.gif"
+              alt="shao-kahn"
+              class="char-img"
+            />
+            <h2>Shao Kahn</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Marreta – Trás, Frente, Soco Alto</li>
+            <li>Bola de fogo – Trás, Trás, Frente, Soco Baixo</li>
+            <li>Ombrada – Frente, Frente, Soco Baixo</li>
+            <li>Ombrada para cima – Frente, Frente, Soco Alto</li>
+            <li>Insulto – Baixo, Baixo, Chute Alto</li>
+            <li>Risada – Baixo, Baixo, Chute Alto</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/sheeva.gif"
+              alt="sheeva"
+              class="char-img"
+            />
+            <h2>Sheeva</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Pulo terremoto – Trás, Baixo, Trás, Chute Alto</li>
+            <li>Bola de fogo – Baixo, Frente, Soco Alto</li>
+            <li>Pulo com teleporte – Baixo, Cima</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/sindel.gif"
+              alt="sindel"
+              class="char-img"
+            />
+            <h2>Sindel</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Bola de Fogo – Frente, Frente, Soco Baixo</li>
+            <li>
+              Bola de Fogo no aerea – Baixo, Frente, Chute Baixo (enquanto
+              pulando ou flutuando)
+            </li>
+            <li>Grito – Frente, Frente, Frente, Soco Alto</li>
+            <li>Flutuar – Trás, Trás, Frente, Chute Alto</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/smoke.png"
+              alt="smoke"
+              class="char-img"
+            />
+            <h2>Smoke</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Harpão – Trás, Trás, Soco Baixo</li>
+            <li>Gancho com teleporte – Frente, Frente, Chute Baixo</li>
+            <li>Arremesso aereo – Bloqueio (no ar)</li>
+            <li>
+              Invisibilidade – Segure Bloqueio e aperte Cima, Cima, Corrida
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/sonya.png"
+              alt="sonya"
+              class="char-img"
+            />
+            <h2>Sonya</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Anéis de energia – Baixo, Frente, Soco Baixo</li>
+            <li>Golpe de onda – Frente, Trás, Soco Alto</li>
+            <li>Chute Bicicleta – Trás, Trás, Baixo, Chute Alto</li>
+            <li>Agarrão com as pernas – Baixo + Soco Baixo + Bloqueio</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/stryker.png"
+              alt="stryker"
+              class="char-img"
+            />
+            <h2>Stryker</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Ataque correndo – Frente, Frente, Chute Alto</li>
+            <li>Usar o bastão – Frente, Trás, Soco Baixo</li>
+            <li>Granada baixa – Baixo, Trás, Soco Baixo</li>
+            <li>Granada alta – Baixo, Trás, Soco Alto</li>
+          </ul>
+        </li>
+        <li>
+          <div class="header">
+            <img
+              src="images/characters/sub-zero.png"
+              alt="sub-zero"
+              class="char-img"
+            />
+            <h2>Sub-Zero</h2>
+          </div>
+          <ul class="char-special-moves">
+            <li>Explosão de Gelo – Baixo, Frente, Soco Baixo</li>
+            <li>Clone de Gelo – Baixo, Trás, Soco Baixo</li>
+            <li>Banho de Gelo (Frente) – Baixo, Frente, Trás, Soco Alto</li>
+            <li>Banho de Gelo (Por trás) - Baixo, Trás, Frente, Soco Alto</li>
+            <li>Banho de Gelo (Por Cima) - Baixo, Frente, Soco Alto</li>
+            <li>Escorregada – Trás + Soco Baixo + Bloqueio + Chute Baixo</li>
+          </ul>
+        </li>
+      </ul>
+    </main>
+    <footer class="footer">
+      <span class="me-4 copyW">Feito por Wachiles &copy; 2022</span>
+      <a href="https://www.instagram.com/caikematoos/?hl=pt-br" target="_blank"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a href="https://github.com/wallacycaike" target="_blank"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a href="https://twitter.com" target="_blank"
+        ><i class="fa-brands fa-twitter"></i
+      ></a>
+    </footer>
+  </body>
+</html>
